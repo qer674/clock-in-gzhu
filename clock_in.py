@@ -18,9 +18,9 @@ class ClockIn:
     """健康打卡"""
 
     def __init__(self):
-        self.xuhao = str(os.environ["XUHAO"])
-        self.mima = str(os.environ["MIMA"])
-        self.pushplus = str(os.environ["PUSHPLUS"])
+        self.xuhao = os.environ["XUHAO"]
+        self.mima = os.environ["MIMA"]
+        self.pushplus = os.environ["PUSHPLUS"]
 
         options = Options()
         options_list = [
